@@ -1,0 +1,26 @@
+{
+  "name": "odin-project-notepad",
+  "version": "1.0.0",
+  "description": "uses OOP, modules, webpack, nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishxbhhhh/odin-project-notepad.git"
+  },
+  "author": "Rishabh Rajpurohit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishxbhhhh/odin-project-notepad/issues"
+  },
+  "homepage": "https://github.com/rishxbhhhh/odin-project-notepad#readme",
+  "devDependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.28.0"
+  }
+}
