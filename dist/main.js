@@ -1,23 +1,32 @@
-const menu = document.getElementById("menu");
-const navbar = document.querySelector("#mynavbar.navbar");
-menu.style.cursor = "pointer";
-navbar.classList.add("dnone");
-function hideShowMenu(x) {
-    if (x.className=="navbar") {
-        x.className+=" dnone";
-      } else {
-        x.className="navbar";
-      }
-}
-menu.addEventListener("click", () => {
-  toggle(menu);
-  hideShowMenu(navbar);
-});
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
 
-function toggle(x) {
-  if (x.classList.contains("rotate")) {
-    x.classList.remove("rotate");
-  } else {
-    x.classList.add("rotate");
-  }
-}
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ (() => {
+
+eval("console.log(\"webpack is not yet used in this!\");\n\n//# sourceURL=webpack://odin-project-notepad/./src/index.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/index.js"]();
+/******/ 	
+/******/ })()
+;
