@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin-Project-Notepad-Todo-App</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-</head>
-<body>
-    <div class="content" id="content"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin-Project-Notepad</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="note-app">
+      <header class="toolbox">
+        <h3 class="title">NOTES</h3>
+        <img src="menu-icon.svg" alt="open actions" id="menu"/>
+        <div class="navbar" id="mynavbar">
+          
+          <form id="add-category-form" class="navitem">
+            <div class="input-field">
+              <input type="text" placeholder="Category title" />
+            </div>
+            <button
+              type="submit"
+              class="icon-button toolbox__btn"
+              title="Add New Category"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+            </button>
+          </form>
+
+          <div class="input-field navitem">
+            <span class="icon"></span>
+            <input type="search" placeholder="Search..." id="search-input" />
+          </div>
+          
+          <button
+            class="icon-button toolbox__btn navitem"
+            title="Show All Notes"
+            id="show-all-notes"
+          ><span>Show All Notes</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </button>
+          
+          <button
+            class="icon-button toolbox__btn navitem"
+            title="Add New Note"
+            id="new-note-btn"
+          > <span>Add New Note</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+          </button>
+
+
+        </div>
+      </header>
+      <main>
+        <section id="categories-list">
+          <h4 class="section__label">
+            CATEGORIES
+          </h4>
+        </section>
+        <hr class="section__separation">
+        <section id="notes-list">
+          <h4 class="section__label">
+            NOTES
+          </h4>
+        </section>
+        <hr class="section__separation">
+        <section id="note-editor">
+          <h4 class="section__label">
+            EDIT NOTE
+          </h4>
+          <form id="note-add-edit-form">
+            <input
+              type="text"
+              name="note-title"
+              autocomplete="off"
+              placeholder="Note title"
+            />
+            <textarea
+              name="note-content"
+              id="note-content"
+              placeholder="Note content..."
+            ></textarea>
+            <button type="submit">Save Note</button>
+          </form>
+        </section>
+      </main>
+      <section id="copyright">
+        Copyright &copy; Rishabh Rajpurohit 2022 <a href="https://www.github.com/rishxbhhhh/odin-project-notepad" class="github">See my GITHUB</a>
+      </section>
+    </div>
+    <script src="scripts/note.js"></script>
+    <script src="scripts/note-dom-helper.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
