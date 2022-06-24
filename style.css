@@ -138,6 +138,13 @@ main {
 }
 
 /** Toolbox - START */
+
+.header__layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .toolbox {
     height: 3em;
     display: flex;
@@ -396,6 +403,7 @@ button {
 #copyright{
     position: relative;
     bottom: 0;
+    height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -458,6 +466,9 @@ button {
 
     .toolbox{
         height: fit-content;
+        display: flex;
+        flex-direction: column;
+
     }
 
     .toolbox__btn{
